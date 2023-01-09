@@ -1,8 +1,6 @@
 <?php 
 
-declare('strict_type=1');
-
-function validaNome(string $nome) : bool
+function validaNome(string $nome): bool
 {
 	if (empty($nome)) {
 		$_SESSION['mensagem-de-erro'] = 'O nome não pode ser vazio';
@@ -22,7 +20,7 @@ function validaNome(string $nome) : bool
 	return true;
 }
 
-function validaIdade(string $idade) : bool
+function validaIdade(string $idade): bool
 {
 	if (! is_numeric($idade)) {
 		$_SESSION['mensagem-de-erro'] = 'Informe um número para a idade';
